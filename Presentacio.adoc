@@ -127,7 +127,10 @@ http://www.writethedocs.org/guide/docs-as-code/
 
 == Aquesta presentació
 
-https://github.com/decidim/documentation-framework-slides/
+* Codi font en Asciidoc: +
+  https://github.com/decidim/documentation-framework-slides/Presentacio.adoc
+* Slideshow online: +
+  https://decidim.github.io/documentation-framework-slides/
 
 
 == MUST (1)
