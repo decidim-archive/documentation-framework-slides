@@ -1,4 +1,7 @@
+// :revealjs_theme: league
+:revealjs_previewLinks: true
 :revealjs_theme: beige
+:source-highlighter: highlightjs
 
 = Documentació amb Asciidoctor
 
@@ -12,8 +15,148 @@ https://asciidoctor.org
 == Asciidoctor.org
 
 
-== Last Slide
+== 1. _Single-source publishing_ 
 
-* Foo
-* Bar
-* World
+https://en.wikipedia.org/wiki/Single-source_publishing
+
+[%notitle,background-iframe=https://en.wikipedia.org/wiki/Single-source_publishing]
+==  _Single-source publishing_ 
+
+
+== 1. _Single-source publishing_ 
+
+[%step]
+* Web, PDF
+* Estructura lògica vs. presentació
+* Enllaços interns i externs
+
+
+== 2. Flux de treball _docs-as-code_
+
+http://www.writethedocs.org/guide/docs-as-code/
+
+
+[%notitle,background-iframe=http://www.writethedocs.org/guide/docs-as-code/]
+== Flux de treball _docs-as-code_
+
+
+== 2. Flux de treball _docs-as-code_
+[%step]
+* Repositori centralitzat
+* Control de versions
+* Treball en paral·lel
+* _Issue tracker_
+* Gestió de contribucions
+
+
+==  3. Eines lliures
+
+* Edició de continguts
+* Generació de documents formatats
+* Publicació
+
+
+== Alternatives
+
+[%step]
+* Google Docs/Drive
+* Libre Office
+* *Llenguatge de marques + Git(Hub) + Editor lliure*
+
+
+== Llenguatge de marques: exemple
+
+[source, html]
+----
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>An Unordered HTML List</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+</body>
+</html>
+----
+
+
+== Llenguatge de marques lleuger
+
+[%step]
+* Exemple: Markdown
+* Fitxers de text
+* *Editors* de text vs. *processadors* de text
+* Marques poc intrusives
+* Fàcil de llegir i d'escriure
+
+
+== Mètode de treball
+
+[%step]
+* Fitxers de text amb marques Asciidoc (`.adoc`)
+* Edició amb Brackets (o Atom, o VSCode)
+* Repositori central a GitHub
+[%step]
+** Plantilla per documents nous +
+  https://github.com/decidim/docs-template
+* Guia d'edició (tasques, rols) +
+  https://github.com/decidim/docs-editing-guide
+* Generació amb Asciidoctor
+* Publicació amb Netlify/GitHub
+
+
+== Exemple Asciidoc
+
+* https://asciidoclive.com/edit/scratch/1
+* https://asciidoctor.org
+
+
+== Conversió de fitxers existents:
+
+[%step]
+. Google Docs (plug-in) +
+  https://docs.google.com/spreadsheets/d/1vHLDf3zNKnwb5EpS1GKpPVZXbaoGOTNF8KBjEkx2bOk/edit#gid=0
+. Pandoc +
+  https://pandoc.org/
+
+
+== Aquesta presentació
+
+https://github.com/decidim/documentation-framework-slides/
+
+
+== MUST (1)
+
+* Toolchain de rendering robusta y bien mantenida
+* Generar site estático
+* Personalizar site HTML
+* Edición sencilla con SL
+* Generación de HTML/PDF y self-hosting con SL
+
+== MUST (2)
+
+* Facilitar múltiples idiomas
+* Organización de ficheros flexible
+* Generar PDF
+* Generación automática con Netlify
+
+== SHOULD
+
+* Workflow branch/edición/commit/merge sencillo
+* Toolchain de generación probada en proyectos grandes
+* Personalizar PDF
+* Compartir fragmentos de texto entre documentos
+* Referencias cruzadas entre documentos
+* Edición avanzada de libros (TOC, índices, biblio)
+
+== MAY
+
+* Búsqueda integrada (vía cliente o servidor)
+* Toolchain sencilla (pocos pasos y pocas herramientas)
+* Facilitar presentación de múltiples versiones
+* Revisión/anotación por colaboradoras
